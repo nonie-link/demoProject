@@ -36,7 +36,7 @@ public class TestUtil extends TestBase{
 		int rows = em.getRows();
 		int cols = em.getCols();
 
-		Object [][] data = new Object[rows][cols];
+		Object [][] data = new Object[rows][1];
 
 		Hashtable<String,String> ht = null;
 
@@ -44,12 +44,12 @@ public class TestUtil extends TestBase{
 			ht = new Hashtable<String,String>();
 			for(int j = 0; j < cols; j++) {
 				ht.put(em.readData(0, j), em.readData(i,j));
-				data[i-1][j] = ht;
+				data[i-1][0] = ht;
 			}
-			return data;
+			
 		}
 
-		return null;
+		return data;
 
 
 	}
