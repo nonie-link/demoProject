@@ -30,10 +30,11 @@ public class TestBase {
 	protected static Properties OR = new Properties();
 	protected static FileInputStream fis;
 	protected static WebDriverWait wait; 
-	
+	protected static String browser;
+
 	@BeforeSuite
 	public void setup() throws IOException {
-		
+
 
 		if(driver == null) {
 
@@ -45,6 +46,13 @@ public class TestBase {
 			OR.load(fis);
 
 		}
+
+		if(System.getenv("browser") != null && !System.getenv("browser").isEmpty())
+			browser = System.getenv("browser");
+		else
+			browser = config.getProperty("browser");    
+
+		config.setProperty("browser", browser);     
 
 		if(config.getProperty("browser").equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -65,8 +73,8 @@ public class TestBase {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		
-        
+
+
 	}
 
 	public boolean isElementPresent(By by) {
@@ -86,12 +94,12 @@ public class TestBase {
 
 		driver.findElement(By.cssSelector(OR.getProperty(locator))).sendKeys(value);
 	}
-	
+
 	public void verifyEquals(String expected, String actual) throws IOException {
 		SoftAssert sa = new SoftAssert();
 		try {
-		sa.assertEquals(expected, actual);
-		sa.assertAll();
+			sa.assertEquals(expected, actual);
+			sa.assertAll();
 		}catch(Throwable t) {
 			TestUtil.captureScreenshot();
 		}
