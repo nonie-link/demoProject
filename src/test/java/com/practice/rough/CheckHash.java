@@ -7,7 +7,13 @@ import java.util.Hashtable;
 import com.practice.utilities.ExcelManager;
 
 public class CheckHash {
-
+/*
+ * 
+ * These are some comments that I have added to the class
+ * 
+ * 
+ * 
+ */
 	public static void main(String[] args) throws IOException {
 
 			String sheetName = "addCustomerTest";
