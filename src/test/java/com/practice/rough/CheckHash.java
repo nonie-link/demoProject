@@ -10,7 +10,7 @@ public class CheckHash {
 /*
  * 
  * These are some comments that I have added to the class
- * 
+ * Second Comments
  * 
  * 
  */
