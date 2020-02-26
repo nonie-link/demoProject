@@ -6,6 +6,8 @@ import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -19,6 +21,8 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.asserts.SoftAssert;
 
+import com.aventstack.extentreports.reporter.ExtentBDDReporter;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.practice.utilities.TestUtil;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -31,6 +35,7 @@ public class TestBase {
 	protected static FileInputStream fis;
 	protected static WebDriverWait wait; 
 	protected static String browser;
+	protected static final Logger logger = LogManager.getLogger(TestBase.class); 
 
 	@BeforeSuite
 	public void setup() throws IOException {
@@ -73,6 +78,8 @@ public class TestBase {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		
+		logger.info("Setup Completed");
 
 
 	}

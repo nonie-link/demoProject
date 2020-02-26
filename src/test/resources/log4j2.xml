@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <File name="LogToFile" fileName="src/test/resources/logs/app.log">
+            <PatternLayout
+                pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n" />
+        </File>
+    </Appenders>
+    
+    <Loggers>
+     <Logger name="com.practice.base.TestBase" level="debug" additivity = "false">
+      <AppenderRef ref="LogToFile"/>
+      </Logger>
+      
+        <Root level="trace" additivity="false">
+            <AppenderRef ref="LogToFile" />
+        </Root>
+    </Loggers>
+</Configuration>

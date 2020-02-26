@@ -25,4 +25,17 @@
       <class name="com.practice.testcases.OpenAccountTest"/>
     </classes>
 </test> <!-- Test -->
+
+<test name="Login Customer Test">
+    <classes>
+      <class name="com.practice.testcases.CustomerLogin"/>
+    </classes>
+    </test> <!--- Test -->
+    
+    <!---
+    <test name="Delete Customer Test">
+    <classes>
+      <class name="com.practice.testcases.DeleteCustomers"/>
+    </classes>
+    </test> -->
 </suite> <!-- Suite -->

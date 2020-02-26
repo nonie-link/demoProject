@@ -24,6 +24,8 @@ public class OpenAccountTest extends TestBase {
 		Assert.assertTrue(alert.getText().contains(data.get("alerttext")));
 		alert.accept();
 		
+		click("homeBtn");
+		
 		
 		
 	}

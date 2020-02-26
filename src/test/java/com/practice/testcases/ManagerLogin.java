@@ -13,6 +13,7 @@ public class ManagerLogin extends TestBase{
 
 	@Test
 	public void ManagerLogin() throws IOException {
+		logger.info("In ManagerLogin Test");
 		click("bankBtn");
 		verifyEquals("asdf", "vbcal");
 		Assert.assertTrue(isElementPresent(By.cssSelector(OR.getProperty("addCustBtn"))), "Login Not Successful");
