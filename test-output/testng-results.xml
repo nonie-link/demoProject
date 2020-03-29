@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[This test has successfully run]]>
+    </line>
+    <line>
+      <![CDATA[<a href = C:\Users\himun\eclipse-workspace\phase1\target\surefire-reports\html\Sun_Mar_01_19_30_39_IST_2020.jpg>Click Here</a>]]>
+    </line>
+    <line>
+      <![CDATA[This test has successfully run]]>
+    </line>
+    <line>
+      <![CDATA[<a href = C:\Users\himun\eclipse-workspace\phase1\target\surefire-reports\html\Sun_Mar_01_19_30_40_IST_2020.jpg>Click Here</a>]]>
+    </line>
+    <line>
+      <![CDATA[This test has successfully run]]>
+    </line>
+    <line>
+      <![CDATA[<a href = C:\Users\himun\eclipse-workspace\phase1\target\surefire-reports\html\Sun_Mar_01_19_30_41_IST_2020.jpg>Click Here</a>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2020-03-01T19:30:38 IST" name="Suite" finished-at="2020-03-01T19:30:52 IST" duration-ms="14753">
+    <groups>
+    </groups>
+    <test started-at="2020-03-01T19:30:38 IST" name="Login Test" finished-at="2020-03-01T19:30:39 IST" duration-ms="879">
+      <class name="com.practice.testcases.ManagerLogin">
+        <test-method signature="ManagerLogin()[pri:0, instance:com.practice.testcases.ManagerLogin@4982cc36]" started-at="2020-03-01T19:30:38 IST" name="ManagerLogin" finished-at="2020-03-01T19:30:38 IST" duration-ms="540" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[This test has successfully run]]>
+            </line>
+            <line>
+              <![CDATA[<a href = C:\Users\himun\eclipse-workspace\phase1\target\surefire-reports\html\Sun_Mar_01_19_30_39_IST_2020.jpg>Click Here</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ManagerLogin -->
+      </class> <!-- com.practice.testcases.ManagerLogin -->
+    </test> <!-- Login Test -->
+    <test started-at="2020-03-01T19:30:39 IST" name="Add Customer Test" finished-at="2020-03-01T19:30:40 IST" duration-ms="1505">
+      <class name="com.practice.testcases.AddCustomerTest">
+        <test-method signature="addCustomerTest(java.util.Hashtable)[pri:0, instance:com.practice.testcases.AddCustomerTest@49cb9cb5]" started-at="2020-03-01T19:30:39 IST" name="addCustomerTest" data-provider="dp" finished-at="2020-03-01T19:30:40 IST" duration-ms="607" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{alerttext=Customer added successfully, postcode=5654987.0, lastname=Trehan, firstname=Himun}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[This test has successfully run]]>
+            </line>
+            <line>
+              <![CDATA[<a href = C:\Users\himun\eclipse-workspace\phase1\target\surefire-reports\html\Sun_Mar_01_19_30_40_IST_2020.jpg>Click Here</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+      </class> <!-- com.practice.testcases.AddCustomerTest -->
+    </test> <!-- Add Customer Test -->
+    <test started-at="2020-03-01T19:30:40 IST" name="Open Account Test" finished-at="2020-03-01T19:30:41 IST" duration-ms="968">
+      <class name="com.practice.testcases.OpenAccountTest">
+        <test-method signature="openAccountTest(java.util.Hashtable)[pri:0, instance:com.practice.testcases.OpenAccountTest@2a898881]" started-at="2020-03-01T19:30:40 IST" name="openAccountTest" data-provider="dp" finished-at="2020-03-01T19:30:41 IST" duration-ms="575" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{currency=Rupee, alerttext=Account created successfully, customer=Himun Trehan}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[This test has successfully run]]>
+            </line>
+            <line>
+              <![CDATA[<a href = C:\Users\himun\eclipse-workspace\phase1\target\surefire-reports\html\Sun_Mar_01_19_30_41_IST_2020.jpg>Click Here</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openAccountTest -->
+      </class> <!-- com.practice.testcases.OpenAccountTest -->
+    </test> <!-- Open Account Test -->
+    <test started-at="2020-03-01T19:30:41 IST" name="Login Customer Test" finished-at="2020-03-01T19:30:52 IST" duration-ms="11352">
+      <class name="com.practice.testcases.CustomerLogin">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.practice.testcases.CustomerLogin@28ec166e]" started-at="2020-03-01T19:30:32 IST" name="setup" finished-at="2020-03-01T19:30:38 IST" duration-ms="5710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="customerLogin(java.util.Hashtable)[pri:0, instance:com.practice.testcases.CustomerLogin@28ec166e]" started-at="2020-03-01T19:30:41 IST" name="customerLogin" data-provider="dp" finished-at="2020-03-01T19:30:52 IST" duration-ms="11346" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=80.0.3987.122)
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'LAPTOP-2FQAGHCU', ip: '192.168.1.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\himun\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52476}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 344d9ef3f5d496397d96ade265018ae3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=80.0.3987.122)
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'LAPTOP-2FQAGHCU', ip: '192.168.1.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\himun\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52476}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 344d9ef3f5d496397d96ade265018ae3
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:633)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:297)
+at com.practice.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
+at com.practice.listeners.CustomListeners.onTestSuccess(CustomListeners.java:18)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:70)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:651)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.practice.testcases.CustomerLogin@28ec166e]" started-at="2020-03-01T19:30:52 IST" name="tearDown" finished-at="2020-03-01T19:30:53 IST" duration-ms="565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.practice.testcases.CustomerLogin -->
+    </test> <!-- Login Customer Test -->
+  </suite> <!-- Suite -->
+</testng-results>

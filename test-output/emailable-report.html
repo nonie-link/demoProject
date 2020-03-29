@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Login Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">879</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Add Customer Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1,505</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Open Account Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">968</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">Login Customer Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">11,352</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">14,704</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.practice.testcases.ManagerLogin</td><td><a href="#m0">ManagerLogin</a></td><td rowspan="1">1583071238213</td><td rowspan="1">540</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Add Customer Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.practice.testcases.AddCustomerTest</td><td><a href="#m1">addCustomerTest</a></td><td rowspan="1">1583071239548</td><td rowspan="1">607</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Open Account Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.practice.testcases.OpenAccountTest</td><td><a href="#m2">openAccountTest</a></td><td rowspan="1">1583071240667</td><td rowspan="1">575</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">Login Customer Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.practice.testcases.CustomerLogin</td><td><a href="#m3">customerLogin</a></td><td rowspan="1">1583071241591</td><td rowspan="1">11346</td></tr></tbody>
+</table>
+<h2>Login Test</h2><h3 id="m0">com.practice.testcases.ManagerLogin#ManagerLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">This test has successfully run<br/><a href = C:\Users\himun\eclipse-workspace\phase1\target\surefire-reports\html\Sun_Mar_01_19_30_39_IST_2020.jpg>Click Here</a></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Add Customer Test</h2><h3 id="m1">com.practice.testcases.AddCustomerTest#addCustomerTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{alerttext=Customer added successfully, postcode=5654987.0, lastname=Trehan, firstname=Himun}</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">This test has successfully run<br/><a href = C:\Users\himun\eclipse-workspace\phase1\target\surefire-reports\html\Sun_Mar_01_19_30_40_IST_2020.jpg>Click Here</a></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Open Account Test</h2><h3 id="m2">com.practice.testcases.OpenAccountTest#openAccountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{currency=Rupee, alerttext=Account created successfully, customer=Himun Trehan}</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">This test has successfully run<br/><a href = C:\Users\himun\eclipse-workspace\phase1\target\surefire-reports\html\Sun_Mar_01_19_30_41_IST_2020.jpg>Click Here</a></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login Customer Test</h2><h3 id="m3">com.practice.testcases.CustomerLogin#customerLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=80.0.3987.122)
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;LAPTOP-2FQAGHCU&apos;, ip: &apos;192.168.1.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\himun\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52476}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 344d9ef3f5d496397d96ade265018ae3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:633)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:297)
+	at com.practice.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
+	at com.practice.listeners.CustomListeners.onTestSuccess(CustomListeners.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
